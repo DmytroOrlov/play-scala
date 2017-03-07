@@ -4,11 +4,10 @@ lazy val root = (project in file("."))
     name := "play-scala",
     version := "1.0-SNAPSHOT",
 
-    scalaVersion := "2.11.8",
+    scalaVersion := "2.12.1",
     libraryDependencies ++= Seq(
-      jdbc,
-      cache,
-      ws,
-      "org.scalatestplus.play" %% "scalatestplus-play" % "1.5.1" % Test
+      guice,
+      "org.scalatest" %% "scalatest" % "3.0.1" % Test,
+      "org.scalatestplus.play" %% "scalatestplus-play" % "2.0.0-M2" % Test
     )
   )
